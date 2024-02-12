@@ -1,0 +1,105 @@
+.body {
+    background-color: rgb(25, 25, 25);
+    font-family: "Josefin Sans";
+    color: rgb(220, 220, 220);
+}
+
+button {
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+    width: 150px;
+}
+
+.contacts {
+    font-size: 36px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+button:active {
+    background-color: rgb(180, 180, 180);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.div1 {
+    border-top: 8px solid rgb(220, 220, 220);
+    border-radius: 5px;
+}
+
+label, input, button, div {
+    margin: 10px 5px;
+    padding: 5px;
+}
+.home {
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+    width: 300px;
+}
+
+.home:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.home:active {
+    background-color: rgb(180, 180, 180);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+.container {
+    height: 100px;
+    position: relative;
+}
+
+
+
+.rounded-button {
+    width: 60px;
+    height: 60px;
+    color: rgb(220, 220, 220);
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 25%;
+    text-decoration: none;
+    font-size: 60px;
+    text-align: center;
+    line-height: unset;
+}
