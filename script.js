@@ -5,12 +5,18 @@ function getFries() {
     var result = 0;
 
     if (isNaN(friesloose)) {
-        var result = (((fries9oz * 9) + (fries7oz * 7))/16);
+        friesloose = 0;
     }
 
-    else {
-        var result = (((fries9oz * 9) + (fries7oz * 7))/16) + friesloose;
+    if (isNaN(fries7oz)) {
+        fries7oz = 0;
     }
+
+    if (isNaN(fries9oz)) {
+        fries9oz = 0;
+    }
+
+    var result = (((fries9oz * 9) + (fries7oz * 7))/16) + friesloose;
 
     document.getElementById('result').innerText = "Fries total (lb): " + result
 }
@@ -74,3 +80,41 @@ function getBacon() {
 
     document.getElementById('bacon').innerText = "Bacon Loose (strips): " + total;
 }
+
+
+function getlbstokgs() {
+    var pounds = document.getElementById("lbsTokgs").value;
+    var kilograms = pounds * 0.453592;
+    document.getElementById("resultLbsToKgs").innerText = "Kilograms (kg): " + kilograms.toFixed(2);
+  }
+  
+function getoztokgs() {
+    var ounces = document.getElementById("oztokgs").value;
+    var kilograms = ounces * 0.0283495;
+    document.getElementById("resultOzToKgs").innerText = "Kilograms (kg): " + kilograms.toFixed(2);
+  }
+  
+function getkgstolbs() {
+    var kilograms = document.getElementById("kgsTolbs").value;
+    var pounds = kilograms / 0.453592;
+    document.getElementById("resultKgsToLbs").innerText = "Pounds (lb): " + pounds.toFixed(2);
+  }
+  
+function getoztolb() {
+    var ounces = document.getElementById("oztolb").value;
+    var pounds = ounces * 0.0625;
+    document.getElementById("resultOzToLb").innerText = "Pounds (lb): " + pounds.toFixed(2);
+  }
+  
+function getlbtooz() {
+    var pounds = document.getElementById("lbtooz").value;
+    var ounces = pounds * 16;
+    document.getElementById("resultLbToOz").innerText = "Ounces (oz): " + ounces.toFixed(2);
+  }
+  
+function getkgtooz() {
+    var kilograms = document.getElementById("kgtooz").value;
+    var ounces = kilograms / 0.0283495;
+    document.getElementById("resultKgToOz").innerText = "Ounces (oz): " + ounces.toFixed(2);
+  }
+  

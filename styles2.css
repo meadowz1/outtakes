@@ -1,12 +1,27 @@
+/* 
+color scheme:
+#191528 - terracotta black
+#3c162f - dark maroon
+#5c162e - maroon
+#7c162e - light maroon
+#110e1b - deep black
+
+WHITES:
+#ffffff - pure white
+#f5f3f4 - off white
+#d3d3d3 - grayish
+#b1a7a6 - grey
+*/
+
 .body {
-    background-color: rgb(25, 25, 25);
+    background-color: #191528;
     font-family: "Josefin Sans";
-    color: rgb(220, 220, 220);
+    color: #f5f3f4;
 }
 
 button {
     text-align: center;
-    background-color: rgb(220, 220, 220);
+    background-color: #f5f3f4;
     border: none;
     color: rgb(25, 25, 25);
     text-decoration: none;
@@ -19,11 +34,6 @@ button {
     width: 150px;
 }
 
-.contacts {
-    font-size: 36px;
-    text-align: center;
-}
-
 button:hover {
     background-color: rgb(200, 200, 200);
 }
@@ -32,6 +42,10 @@ button:active {
     background-color: rgb(180, 180, 180);
     box-shadow: 0 5px #666;
     transform: translateY(4px)
+}
+
+.converter {
+    margin: 25px;
 }
 
 .title {
@@ -46,10 +60,25 @@ button:active {
 }
 
 label, input, button, div {
-    margin: 10px 5px;
+    margin: 10px 0px;
     padding: 5px;
 }
-.home {
+
+.items {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.items input {
+    padding: 8px;
+    font-family: "Josefin Sans";
+    border: 2px solid #3c162f;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.center button {
     text-align: center;
     background-color: rgb(220, 220, 220);
     border: none;
@@ -62,44 +91,59 @@ label, input, button, div {
     border-radius: 12px;
     box-shadow: 0 9px #999;
     width: 300px;
+    margin: 10px;
+    text-decoration: none;
 }
 
-.home:hover {
+.center button:hover {
     background-color: rgb(200, 200, 200);
 }
 
-.home:active {
+.center button:active {
     background-color: rgb(180, 180, 180);
     box-shadow: 0 5px #666;
     transform: translateY(4px)
 }
 
 .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    position: relative;
+    display: block;
+    text-align: center;
   }
 
 .container {
-    height: 100px;
+    height: 200px;
     position: relative;
 }
 
+.contacts {
+    font-size: 36px;
+    text-align: center;
+}
+.contacts a {
+    transition: 0.15s ease-in;
+    margin: 1.5%;
+}
 
+.contacts a:hover {
+    color: rgb(120, 120, 120);
+}
+
+.contacts a:active {
+    color: rgb(100, 100, 100);
+    transform: translateY(3px);
+}
 
 .rounded-button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     color: rgb(220, 220, 220);
     display: inline-flex;
     justify-content: center;
     cursor: pointer;
     border-radius: 25%;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     line-height: unset;
 }

@@ -1,4 +1,4 @@
-.body {
+body {
     background-color: #191528;
     font-family: "Josefin Sans";
     color: #f5f3f4;
@@ -15,20 +15,54 @@
     border-radius: 5px;
 }
 
-.subtitle1 {
-    text-align: center;
-}
-
 .div2 {
     border-top: 4px solid rgb(220, 220, 220);
     border-radius: 3px;
     margin-top: 30px;
 }
 
-.explanation {
-    text-align: left;
-    margin-right: 10px;
-    margin-left: 10px;
+button {
+    text-align: center;
+    background-color: #f5f3f4;
+    border: none;
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 12px;
+    box-shadow: 0 9px #999;
+    width: 150px;
+}
+
+
+.converter {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.converter label, input, button, div {
+    margin: 10px 0;
+}
+
+.converter input {
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+button:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+button:active {
+    background-color: rgb(180, 180, 180);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
 }
 
 .center button {
@@ -68,6 +102,7 @@
     height: 200px;
     position: relative;
 }
+
 
 .contacts {
     font-size: 36px;

@@ -6,6 +6,7 @@
     <title>OutTakes Counts Calculator | meadowz</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" type="image/x-icon" href="/img/icon.png">
 </head>
 <body class="body">
   <p class="title">
@@ -14,47 +15,49 @@
 
   <hr class="div1">
 
+  <div class="items">
+    <label for="fries9oz">Fries 9oz Portions:</label><br>
+    <input type="text" id="fries9oz" name="fries9oz" placeholder="0"><br>
+    <label for="fries7oz">Fries 7oz Portions:</label><br>
+    <input type="text" id="fries7oz" name="fries7oz" placeholder="0"><br>
+    <label for="loosefries">Fries Loose (lb):</label><br>
+    <input type="text" id="friesloose" name="friesloose" placeholder="0"><br>
+    <button onclick="getFries()">result</button>
+    <div id="result">Fries (lb): </div>
   
-  <label for="fries9oz">Fries 9oz Portions:</label><br>
-  <input type="text" id="fries9oz" name="fries9oz" placeholder="0"><br>
-  <label for="fries7oz">Fries 7oz Portions:</label><br>
-  <input type="text" id="fries7oz" name="fries7oz" placeholder="0"><br>
-  <label for="loosefries">Fries Loose (lb):</label><br>
-  <input type="text" id="friesloose" name="friesloose" placeholder="0"><br>
-  <button onclick="getFries()">result</button>
-  <div id="result">Fries (lb): </div>
 
-  <hr class="div1">
+    <hr class="div1">
 
-  <label for="sweetpotato">Sweet Potato Fries Portions (7oz):</label><br>
-  <input type="text" id="sweetpotato" name="sweetpotato" placeholder="0"><br>
-  <button onclick="getSweetPotato()">result</button>
-  <div id="sweetpotatoresult">Sweet Potato (kg):</div>
+    <label for="sweetpotato">Sweet Potato Fries Portions (7oz):</label><br>
+    <input type="text" id="sweetpotato" name="sweetpotato" placeholder="0"><br>
+    <button onclick="getSweetPotato()">result</button>
+    <div id="sweetpotatoresult">Sweet Potato (kg):</div>
 
-  <hr class="div1">
+    <hr class="div1">
 
-  <label for="cheesecurdsthaw">Cheese Curds (thawed)</label><br>
-  <input type="text" id="cheesecurdsthaw" name="cheesecurdsthaw" placeholder="0"><br>
-  <label for="cheesecurds">Cheese Curds (using)</label><br>
-  <input type="text" id="cheesecurds" name="cheesecurds" placeholder="0"><br>
-  <label for="cheesecurdscase">Cheese Curds (cases)</label><br>
-  <input type="text" id="cheesecurdscase" name="cheesecurdscase" placeholder="0"><br>
-  <button onclick="getCheese()">result</button><br>
-  <div id="loosecurds">Loose Cheese Curds:</div>
-  <div id="allcurds">Total Cheese Curds:</div>
+    <label for="cheesecurdsthaw">Cheese Curds (thawed)</label><br>
+    <input type="text" id="cheesecurdsthaw" name="cheesecurdsthaw" placeholder="0"><br>
+    <label for="cheesecurds">Cheese Curds (using)</label><br>
+    <input type="text" id="cheesecurds" name="cheesecurds" placeholder="0"><br>
+    <label for="cheesecurdscase">Cheese Curds (cases)</label><br>
+    <input type="text" id="cheesecurdscase" name="cheesecurdscase" placeholder="0"><br>
+    <button onclick="getCheese()">result</button><br>
+    <div id="loosecurds">Loose Cheese Curds:</div>
+    <div id="allcurds">Total Cheese Curds:</div>
 
-  <hr class="div1">
+    <hr class="div1">
 
-  <label for="baconcups">Bacon (portion cups):</label><br>
-  <input type="text" id="baconcups" name="baconcups" placeholder="0"><br>
+    <label for="baconcups">Bacon (portion cups):</label><br>
+    <input type="text" id="baconcups" name="baconcups" placeholder="0"><br>
 
-  <label for="baconsheets">Bacon (loose sheets):</label><br>
-  <input type="text" id="baconsheets" name="baconsheets" placeholder="0"><br>
+    <label for="baconsheets">Bacon (loose sheets):</label><br>
+    <input type="text" id="baconsheets" name="baconsheets" placeholder="0"><br>
 
-  <button onclick="getBacon()">result</button><br>
-  <div id="bacon">Bacon Loose (strips): </div>
+    <button onclick="getBacon()">result</button><br>
+    <div id="bacon">Bacon Loose (strips): </div>
 
-  <hr class="div1">
+    <hr class="div1">
+  </div>
 
   <p>
     Most things in OutTakes can be either just weighed or counted by hand. 
@@ -72,6 +75,11 @@
       <a href="index.html">
         <button class="home">
           Take Me To Home Page
+        </button>
+      </a> 
+      <a href="tools.html">
+        <button class="tools">
+          Extra Tools
         </button>
       </a>
     </div>
@@ -98,6 +106,10 @@
 
     <a class="rounded-button" href="https://www.linkedin.com/in/mikebangar/">
       <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a class="rounded-button" href="https://leetcode.com/meadowz/">
+      <i class="fa-solid fa-laptop-code"></i>
     </a>
 
   </div>
